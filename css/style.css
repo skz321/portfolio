@@ -1,0 +1,145 @@
+/* Importing Google Fonts */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Header & Footer */
+header, footer {
+  background-color: #0d6efd;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f9fa;
+  padding: 0.5rem 0;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0056b3;
+}
+
+/* Hero */
+.hero {
+  background-color: #e7f1ff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.hero .btn:hover {
+  background-color: #084298;
+}
+
+/* About Section */
+.about, .contact {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, button {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Project Grid */
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  padding: 1rem;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive Multi-column Layout */
+@media (min-width: 768px) {
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  input, textarea {
+  background-color: #111;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+}
